@@ -33,4 +33,22 @@
 
   document.addEventListener("DOMContentLoaded", typeEffect);
 
-  
+ function showModal(id) {
+  document.getElementById(`${id}-modal`).style.display = "flex";
+}
+
+function closeModal(id) {
+  document.getElementById(`${id}-modal`).style.display = "none";
+}
+function closeModal(id) {
+  const modal = document.getElementById(`${id}-modal`);
+  modal.style.display = "none";
+
+  // Stop video when modal closes
+  const video = modal.querySelector("video");
+  if (video) {
+    video.pause();
+    video.currentTime = 0;
+  }
+}
+ 
