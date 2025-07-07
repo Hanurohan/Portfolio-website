@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfolio Website</title>
     <link rel="stylesheet" href=style.css />
    <link
@@ -108,8 +108,8 @@
         <div class="services-container">
           <div class="service-box">
             <div class="service-info">
-              <i class="bx bxl-figma"></i>
-              <h4>Full Stack Developer</h4>
+              <i class='bx bx-layer'></i>
+              <h4 class="glow-role">Full Stack Developer</h4>
               <p>Full Stack Developer with a strong foundation in both front-end and back-end technologies. 
                 Passionate about building scalable, efficient, and responsive web applications from concept 
                 to deployment. Skilled in creating seamless user experiences and architecting robust 
@@ -121,8 +121,8 @@
 
           <div class="service-box">
             <div class="service-info">
-              <i class="bx bx-code"></i>
-              <h4>Prompt Engineer</h4>
+              <i class='bx bx-message-dots'></i>
+              <h4 class="glow-role">Prompt Engineer</h4>
               <p>Prompt Engineer with a deep understanding of language models and natural language processing. 
                 Skilled in crafting precise, effective prompts to optimize AI outputs across various tasks. 
                 Experienced in bridging the gap between human intent and machine interpretation, and 
@@ -133,8 +133,8 @@
 
           <div class="service-box">
             <div class="service-info">
-              <i class="bx bx-code-curly"></i>
-              <h4>AI Developer</h4>
+              <i class='bx bx-brain'></i>
+              <h4 class="glow-role">AI Developer</h4>
               <p> AI Developer with expertise in building intelligent systems that leverage machine learning, 
                 deep learning, and data-driven algorithms. Skilled in developing and deploying AI models for 
                 real-world applications, from predictive analytics to computer vision and natural language 
@@ -209,23 +209,39 @@
         <div class="card-details">
           <h3>Moon Light Travels</h3>
           <p>Created a Custom Website for the Travel Company.</p>
-          <div class="btn">Review Project</div>
+          <a href="https://moonlighttravelskaraikal.on.drv.tw/" class="btn" target="_blank" rel="noopener noreferrer">Review Project</a>
+
+
         </div>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="card-inner">
-        <div class="logo-area">
-          <img src="project6.png" alt="Project 6" />
-        </div>
-        <div class="card-details">
-          <h3>Project 6</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus enim risus.</p>
-          <div class="btn">Review Project</div>
-        </div>
-      </div>
+  <div class="card-inner">
+    <div class="logo-area">
+      <img src="./lunar lander.webp" alt="Lunar Lander">
     </div>
+    <div class="card-details">
+      <h3>Lunar Lander (RL - Colab)</h3>
+      <p>Trained a reinforcement learning agent using Deep Q-Networks in Google Colab with OpenAI Gym.</p>
+      <button class="btn" onclick="showModal('lunar')">Review Project</button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="lunar-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('lunar')">&times;</span>
+    <h3>Lunar Lander Output</h3>
+    <video controls autoplay muted>
+      <source src="lunar-lander.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <a href="https://colab.research.google.com/drive/1KApTLlEvy-NnNbMHqJBzdW6qMk6cCpoC?usp=sharing" target="_blank" class="btn">Open in Colab</a>
+  </div>
+</div>
+
+
 
   </div>
 </section>
